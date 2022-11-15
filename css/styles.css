@@ -153,6 +153,7 @@ a{
     text-align: center;
     font-size: 2.5rem;
     color: red;
+    margin-bottom: 2rem;
 }
 
 
@@ -177,6 +178,7 @@ a{
 
 .noticias_img {
     width: 100rem; /*Ancho*/
+    margin-top: 2rem;
 }
 
 .noticias_video {
