@@ -54,7 +54,7 @@ iframe {
 
     
 #cuerpo-index {
-    background-image: url(../Img/sonrisa.jpg);
+    background-image: url(../img/sonrisa.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,7 +121,7 @@ a{
 
 .card {  
     border: groove.8rem rgb(61, 11, 14);
-    background-image: url(../Img/colores.png);
+    background-image: url(../img/colores.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -229,7 +229,7 @@ h2 {
 }
 
 #cuerpo-contacto {
-    background-image: url(../Img/sonrisaroja.jpg);
+    background-image: url(../img/sonrisaroja.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -318,7 +318,7 @@ fieldset {
 }
 
 #cuerpo-videos {
-    background-image: url(../Img/craneoazulyrojo.jpg);
+    background-image: url(../img/craneoazulyrojo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -356,7 +356,7 @@ fieldset {
 .div_peliseries {    
     margin-left: 15rem;
     border: none rgb(61, 11, 14);
-    background-image: url(../Img/tinta\ negra.png);
+    background-image: url(..img/tinta\ negra.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -365,7 +365,7 @@ fieldset {
 }
 
 #cuerpo-peliseries {
-    background-image: url(../Img/calabazas.jfif);
+    background-image: url(../img/calabazas.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -411,7 +411,7 @@ fieldset {
 
 
 #cuerpo-galeria {
-    background-image: url(../Img/payasoo.png);
+    background-image: url(../img/payasoo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
