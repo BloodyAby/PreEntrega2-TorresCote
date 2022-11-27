@@ -1,313 +1,299 @@
-*{
-    padding: 0;
-    margin: 0;
-
+* {
+  padding: 0;
+  margin: 0;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .footer {
-    color:red;
-    font-size: 2rem;
-    margin-top: 2rem;
-    
+  color: red;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .parrafos {
-    color: rgb(238, 220, 220);
-    font-size: 3rem;
+  color: rgb(238, 220, 220);
+  font-size: 3rem;
 }
 
 .fuente__mediana {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .header_img {
-    width: 100%; /*Ancho*/
-    height: 20rem; /*Altura*/
-    opacity: 0.6;
-    animation: sangre-aparece 7s; /*Animacion*/
+  width: 100%; /*Ancho*/
+  height: 20rem; /*Altura*/
+  opacity: 0.6;
+  animation: sangre-aparece 7s; /*Animacion*/
 }
 
 @keyframes sangre-aparece {
-    0% {
-        opacity: 0.01;
-    }
-    100%{
-        opacity: 0.6;
-    }
-
+  0% {
+    opacity: 0.01;
+  }
+  100% {
+    opacity: 0.6;
+  }
 }
 
-iframe {
-    max-width: 100%;
-    margin-top: 2rem;
+.iframe {
+  max-width: 80rem;
+  margin-top: 2rem;
+  align-items: center;
 }
 
 /*Inicio de estilos del index*/
 
-
-    
 #cuerpo-index {
-    background-image: url(../img/sonrisa.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #000;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 376px, 90px, auto, 100px;
-    grid-template-areas: 
+  background-image: url(../img/sonrisa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 376px, 90px, auto, 100px;
+  grid-template-areas:
     "arriba arriba arriba"
-    "header header header"        
+    "header header header"
     "noticias noticias noticias"
     "footer footer footer";
 }
 
 header {
-    grid-area: header;
-    font-size: 2rem;
-    background-image: url(../img/red4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1.5rem;
-    z-index: 1;
+  grid-area: header;
+  font-size: 2rem;
+  background-image: url(../img/red4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+  z-index: 1;
 }
 
-a{
-    color: rgb(97, 240, 133);
-    text-decoration: none;
+a {
+  color: rgb(97, 240, 133);
+  text-decoration: none;
 }
 
 .navegacion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navegacion li{
-    display: inline;
-    margin-right: 9rem;
-    padding: .3rem 2rem;  
-    background-color: none;
-    transition: background-color 1s; /*Tiempo que dura la transición*/
+.navegacion li {
+  display: inline;
+  margin-right: 9rem;
+  padding: 0.3rem 2rem;
+  background-color: none;
+  transition: background-color 1s; /*Tiempo que dura la transición*/
 }
 
 .navegacion li:hover {
-    background-color: rgba(0, 0, 0, 0.596); /*color final del fondo de la transición*/
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.596
+  ); /*color final del fondo de la transición*/
 }
 
 .arriba {
-    grid-area: arriba;
+  grid-area: arriba;
 }
 
 .cards-index {
-    grid-area: noticias;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 2rem;
-    justify-items: center;    
+  grid-area: noticias;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+  justify-items: center;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
-.card {  
-    border: groove.8rem rgb(61, 11, 14);
-    background-image: url(../img/colores.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    color: rgb(255, 255, 255);
-    font-size: 2rem;  
-    margin: 0.5rem;   
+.card {
+  border: groove.8rem rgb(61, 11, 14);
+  background-image: url(../img/colores.png);
+  background-color: rgba(226, 43, 156, 0.219);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 1024px) {
-
-    .cards-index {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .cards-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .navegacion {
-        flex-direction: column;
-    }
-    
-    .cards-index {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
+  .navegacion {
+    flex-direction: column;
+  }
 
+  .cards-index {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .titulo_card {
-    text-align: center;
-    font-size: 2.5rem;
-    color: red;
-    margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 2rem;
 }
-
-
 
 .h1index {
-    color:rgb(235, 16, 16);
-    font-size: 3rem;
-    text-align: center;    
+  color: rgb(235, 16, 16);
+  font-size: 3rem;
+  text-align: center;
 }
-
 
 #primer_parrafo {
-    margin-left: 5rem;
-    margin-bottom: 4rem;
-    background-image: url(../img/red2.png);
-    background-position: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  background-image: url(../img/red2.png);
+  background-position: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 2rem;
 }
 
-
 .noticias_img {
-    width: 100rem; /*Ancho*/
-    margin-top: 2rem;
+  width: 100rem; /*Ancho*/
+  margin-top: 2rem;
 }
 
 .noticias_video {
-    max-width: 100%; /*Ancho*/ 
+  max-width: 100%; /*Ancho*/
 }
 
 h2 {
-    color:rgb(161, 26, 26);
-    font-size: 3rem;
+  color: rgb(161, 26, 26);
+  font-size: 3rem;
 }
-
-
 
 /*Fin de estilos del index*/
 
 /*Estilos contacto*/
 
-
 .h1_contacto {
-    color:rgb(235, 16, 16);
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  color: rgb(235, 16, 16);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .h2_contacto {
-    color:rgb(235, 16, 16);
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  color: rgb(235, 16, 16);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-
 .h3_contacto {
-    color:rgb(235, 16, 16);
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-
+  color: rgb(235, 16, 16);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .parrafos-formulario {
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-
+  color: white;
+  font-size: 2rem;
+  text-align: center;
 }
 
 #cuerpo-contacto {
-    background-image: url(../img/sonrisaroja.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/sonrisaroja.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 input:focus {
-    width: 35rem;
-    background-color: rgb(243, 51, 76);
-    outline: none;
+  width: 35rem;
+  background-color: rgb(243, 51, 76);
+  outline: none;
 }
 
 .formulario {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    color: rgb(238, 220, 220);
-    font-size: 3rem;    
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgb(238, 220, 220);
+  font-size: 3rem;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-    
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border: none;
-    font-size: 2rem;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: none;
+  font-size: 2rem;
+  gap: 2rem;
 }
 .leyenda {
-    font-size: 3rem;
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .textarea:focus {
-    background-color: rgb(243, 51, 76);
-    outline: none;
+  background-color: rgb(243, 51, 76);
+  outline: none;
 }
 
-
-
 .imagen-usuario {
-    margin-top: 2rem;
-    width: 20rem;
-    
-    transition: width 2s; /*tiempo que dura la transición*/
+  margin-top: 2rem;
+  width: 20rem;
+
+  transition: width 2s; /*tiempo que dura la transición*/
 }
 
 .imagen-usuario:hover {
-    width: 25rem; /*ancho imagen final de la transición*/
-
+  width: 25rem; /*ancho imagen final de la transición*/
 }
 
-.imagen-manocelular  {
-    margin-top: 3rem;
-    width: 40rem;
-    transition: width 2s; /*tiempo que dura la transición*/
+.imagen-manocelular {
+  margin-top: 3rem;
+  width: 40rem;
+  transition: width 2s; /*tiempo que dura la transición*/
 }
 
 .imagen-manocelular:hover {
-    width: 45rem;
+  width: 45rem;
 }
 
 .ubicacion-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Fin de estilos de contacto*/
@@ -315,134 +301,132 @@ fieldset {
 /*Estilos videos*/
 
 .h1_videos {
-    color:rgb(235, 16, 126);
-    font-size: 5rem;
-    text-align: center;
+  color: rgb(235, 16, 126);
+  font-size: 5rem;
+  text-align: center;
 }
 
 #cuerpo-videos {
-    background-image: url(../img/craneoazulyrojo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/craneoazulyrojo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #section_videos {
-    padding: 1rem;
-       
+  padding: 1rem;
+  background-color: rgba(234, 0, 255, 0.151);
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .div-videos {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.titulos_parrafos_videos{
-    color:rgb(235, 16, 126);
-    font-size: 3rem;
+.titulos_parrafos_videos {
+  color: rgb(235, 16, 126);
+  font-size: 3rem;
 }
 
 .parrafos_videos {
-    color:rgb(16, 221, 235);
-    font-size: 2rem;
+  color: rgb(16, 221, 235);
+  font-size: 2rem;
 }
 
 /*Fin estilos videos*/
 
 /*Estilos peliculas y series*/
 
-.div_peliseries {    
-    margin-left: 15rem;
-    margin-right: 15rem;
-    border: none rgb(61, 11, 14);
-    background-image: url(../img/tinta\ negra.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;    
-    color: rgb(255, 255, 255);
+.div_peliseries {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  border: none rgb(61, 11, 14);
+  background-image: url(../img/tinta\ negra.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(85, 19, 52, 0.541);
 }
 
 #cuerpo-peliseries {
-    background-image: url(../img/calabazas.jfif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/calabazas.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.titulos_peliseries{
-    color:rgb(248, 95, 6);
-    font-size: 4rem;
-    text-align: center;
-    padding: 3rem;
-    
+.titulos_peliseries {
+  color: rgb(248, 95, 6);
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem;
 }
 
 .parrafos_peliseries {
-    color:rgb(250, 210, 151);
-    font-size: 3rem;
+  color: rgb(250, 210, 151);
+  font-size: 3rem;
 }
 
-.titulos_parrafos_peliseries{
-    color:rgb(243, 145, 64);
-    font-size: 4rem;
-    margin-bottom: 2rem;
+.titulos_parrafos_peliseries {
+  color: rgb(243, 145, 64);
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .section_peliseries {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 .recuadros-peliseries {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-
 
 /*Fin de estilos peliculas y series*/
 
-
 /*Estilos Galeria*/
 
-
 #cuerpo-galeria {
-    background-image: url(../img/payasoo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/payasoo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.h1_galeria{
-    color:rgb(245, 167, 79);
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.h1_galeria {
+  color: rgb(245, 167, 79);
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .imagen_galeria {
-    width: 150rem;
-    margin-bottom: 4rem;
-    }
+  width: 150rem;
+  margin-bottom: 4rem;
+}
 
 .div_galeria {
-    margin-left: 15rem;
-    border: none rgb(61, 11, 14);
-    }
+  margin-left: 15rem;
+  border: none rgb(61, 11, 14);
+}
 
 #carouselExampleControls {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 /*Fin Estilos Galeria*/
